@@ -1,0 +1,191 @@
+* {
+  font-family: 'Libre Baskerville', serif;
+}
+
+body {
+  background-color: #f0f8ff;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family: "Verdana", Sans-serif;
+  background-color: #cce7ff;
+  border-bottom: 5px solid #8bd1da;
+}
+
+header .title {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+header .subtitle {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+nav {
+  background-color: #cce7ff;
+  border-bottom: 5px solid #8bd1da;
+  padding: 10px;
+}
+
+.nav-button {
+  padding: 8px 15px;
+  margin: 5px 5px;
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #c4f4fa;
+  border-radius: 5px;
+  background-color: #b0e0e6;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #add8e6;
+  color: #fff;
+}
+
+main {
+  background-color: #f0f8ff;
+}
+
+.pictureFrame {
+  text-align: center;
+  font-weight: 500;
+  font-style: italic;
+  flex-basis: 500px;
+}
+
+.picture {
+  font-size: 1.2em;
+  display: inline-block;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.pictureGrid {
+  padding: 1%;
+  column-count: 2;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 5%;
+  gap: 10px 0px;
+  background-color: #b0e0e6;
+  border: 10px solid #c4f4fa;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  .pictureGrid {
+    column-count: 1;
+  }
+}
+
+.video_link,
+.anecdote,
+.condolence {
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  margin: 20px 10%;
+  background-color: #b0e0e6;
+  border: 5px solid #c4f4fa;
+  border-radius: 5px;
+}
+
+.video_link:hover,
+.anecdote:hover,
+.condolence:hover {
+  background-color: #add8e6;
+}
+
+.anecdote .author,
+.condolence .author {
+  text-align: end;
+  font-style: italic;
+}
+
+footer {
+  font-size: 0.8em;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  font-weight: bold;
+  border-top-right-radius: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footer {
+  background-color: #f0f8ff;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pageIndexSelector {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pageIndexSelector button {
+  background-color: #80c3ff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pageIndexSelector button:hover {
+  background-color: #33a0ff;
+}
+
+.submitButton {
+  background-color: #80c3ff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.submitButton:hover {
+  background-color: #33a0ff;
+}
+
+.authorField {
+  background-color: #f0f8ff;
+  border: 2px solid #318f9b;
+}
+
+.contentField {
+  width: 80%;
+  background-color: #f0f8ff;
+  border: 2px solid #318f9b;
+}
+
+.authorField:hover,
+.contentField:hover {
+  background-color: #e6f3ff;
+}

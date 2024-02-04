@@ -1,0 +1,14 @@
+[package]
+name = "memorial-backend" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["Leo Ring <leoring03@gmail.com>"]
+edition = '2021'
+
+[dependencies]
+diesel = { version = "2.1.4", default-features = false, features = ["postgres"] }
+dotenvy = "0.15.7"
+lettre = "0.11.3"
+rocket = "0.5.0"
+rocket_cors = "0.6.0"
+serde = { version = "1.0.194", features = ["derive"] }
+serde_json = "1.0.111"
